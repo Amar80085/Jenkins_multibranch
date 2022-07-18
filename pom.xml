@@ -35,11 +35,19 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+	  
+    <repository>
+	      <id>nexus</id>
+	      <name>Flipkart Releases Nexus Repository</name>
+	      <url>http://3.111.47.23:8081/nexus/repository/flipkart-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Flipkart snapshot Nexus Repository </name>
+	      <url>http://3.111.47.23:8081/nexus/repository/flipkart-Snapshot/</url>
+	    </snapshotRepository>
+	  
   </distributionManagement>
 
   <build>
